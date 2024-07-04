@@ -9,7 +9,7 @@ app.use(fileUpload({
 }));
 
 app.get('/', (req, res) => {
-    res.json({ message: 'Welcome to the server with S3'})
+    res.json({ message: 'Welcome to the mini-server with S3'})
 })
 
 app.post('/files', (req, res) => {
