@@ -1,7 +1,10 @@
 import express from 'express';
 import fileUpload from 'express-fileupload';
 
+import './config/aws.js';
+
 const app = express();
+
 
 app.use(fileUpload({
     useTempFiles: true,
