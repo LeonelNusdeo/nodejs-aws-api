@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
     res.json({ message: "Welcome to the server with S3" });
 });
 
-app.post("/files", async (req, res) => {
+app.post("/file", async (req, res) => {
     const result = await uploadFile(req.files.file);
     res.json({ result });
 });
